@@ -69,11 +69,27 @@ def index(request):
 
 ```
 
+# Template 
+
+루트 디렉토리에 templates 디렉토리 생성 (django_container/templates)
+templates 디렉토리 등록 (config/settings.py >> TEMPLATES >> DIRS 수정)
+
+
+
+
+templates 에 기본 틀 페이지인 main.html 템플릿 생성 (django_container/templates/main.html)
+
+
+
 # 부트스트랩 적용
 
 ### static 디렉토리 등록 ###
 
 루트 디렉토리에 static 디렉토리 생성 (django_container/static)
+
+``` python
+'DIRS': [os.path.join(BASE_DIR, 'templates')],
+```
 
 config/settings.py에 제일 아래 부분에 코드를 추가하여 static 디렉토리 등록
 
@@ -84,5 +100,6 @@ STATICFILES_DIR = [
 
 ```
 
-### Bootstrap 관련 파일 다운로드 ###
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
