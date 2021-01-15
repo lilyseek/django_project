@@ -44,4 +44,7 @@ urlpatterns = [
     path('', include('common.urls')),
     path('admin/', admin.site.urls),
 ]
+{ % highlight python linenos % }
+code_contents
+{ % endhighlight % }
 ```
