@@ -71,9 +71,9 @@ def index(request):
 
 # 부트스트랩 적용
 
-**루트 디렉토리에 static 디렉토리 생성 (django_container/static)**
+루트 디렉토리에 static 디렉토리 생성 (django_container/static)
 
-**config/settings.py에 제일 아래 부분에 코드를 추가하여 static 디렉토리 등록**
+config/settings.py에 제일 아래 부분에 코드를 추가하여 static 디렉토리 등록
 
 ``` python
 STATICFILES_DIR = [
