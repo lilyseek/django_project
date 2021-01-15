@@ -31,6 +31,7 @@ python manage.py runserver 0:80
 
 ```python
 python manage.py startapp common
+
 ```
 
 https://django-container-zdiah.run.goorm.io/ 와 같이 메인 페이지로('') 요청이 들어왔을 때 **common/views 의 index**로 이동하게 설정
@@ -44,4 +45,26 @@ urlpatterns = [
     path('', include('common.urls')),
     path('admin/', admin.site.urls),
 ]
+
+```
+
+**common/urls.py 생성**
+``` python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index)
+]
+
+```
+
+**common/views.py 에 index() 함수 생성**
+``` python
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("main page")
+
 ```
