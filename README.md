@@ -32,3 +32,5 @@ python manage.py runserver 0:80
 ```python
 python manage.py startapp common
 ```
+
+https://django-container-zdiah.run.goorm.io/ 와 같이 메인 페이지로('') 요청이 들어왔을 때 common/views 의 index로 이동하게 설정
