@@ -26,6 +26,7 @@ python manage.py runserver 0:80
 ```
 > URL과 포트는 **[메뉴]->[프로젝트]->[실행URL과 포트]** 에서 확인 가능
 
+###
 # 공통 앱 생성
 
 ```python
