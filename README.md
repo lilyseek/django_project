@@ -72,7 +72,7 @@ def index(request):
 # 부트스트랩 적용
 
 **루트 디렉토리에 static 디렉토리 생성**
-/django_container/static
+django_container/static
 
 **static 디렉토리 등록**
 
