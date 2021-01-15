@@ -38,7 +38,7 @@ https://django-container-zdiah.run.goorm.io/ 와 같이 메인 페이지로('') 
 **config/urls.py 수정**
 ``` python
 from django.contrib import admin
-**from django.urls import path, include**
+from django.urls import path, include
 
 urlpatterns = [
     path('', include('common.urls')),
