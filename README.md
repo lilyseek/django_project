@@ -35,7 +35,7 @@ python manage.py startapp common
 
 https://django-container-zdiah.run.goorm.io/ 와 같이 메인 페이지로('') 요청이 들어왔을 때 **common/views 의 index**로 이동하게 설정
 
-** config/urls.py 수정 **
+**config/urls.py 수정**
 ``` python
 from django.contrib import admin
 from django.urls import path, include
