@@ -75,6 +75,7 @@ def index(request):
 /django_container/static
 
 **static 디렉토리 등록**
+
 /config/settings.py에 제일 아래 부분에 코드 추가
 
 ``` python
