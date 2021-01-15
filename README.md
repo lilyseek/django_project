@@ -73,12 +73,11 @@ def index(request):
 
 루트 디렉토리에 templates 디렉토리 생성 (django_container/templates)
 templates 디렉토리 등록 (config/settings.py >> TEMPLATES >> DIRS 수정)
+
 ``` python
 'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
 ```
-
-
-
 templates 에 기본 틀 페이지인 main.html 템플릿 생성 (django_container/templates/main.html)
 
 
